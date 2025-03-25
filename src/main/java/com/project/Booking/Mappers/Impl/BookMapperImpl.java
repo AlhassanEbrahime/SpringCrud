@@ -1,8 +1,8 @@
-package com.project.Booking.Mappers.MapperImpls;
+package com.project.Booking.Mappers.Impl;
 
 import com.project.Booking.DTOs.BookDTO;
 import com.project.Booking.Entites.Book;
-import com.project.Booking.Mappers.MapperInterfaces.BookMapper;
+import com.project.Booking.Mappers.BookMapper;
 import org.springframework.stereotype.Component;
 
 @Component

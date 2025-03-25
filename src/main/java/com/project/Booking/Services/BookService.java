@@ -1,4 +1,4 @@
-package com.project.Booking.Services.serviceinterfaces;
+package com.project.Booking.Services;
 
 import com.project.Booking.DTOs.BookDTO;
 

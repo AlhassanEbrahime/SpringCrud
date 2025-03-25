@@ -1,8 +1,7 @@
 package com.project.Booking.Controllers;
 
 import com.project.Booking.DTOs.BookDTO;
-import com.project.Booking.Services.serviceinterfaces.BookService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+import com.project.Booking.Services.BookService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

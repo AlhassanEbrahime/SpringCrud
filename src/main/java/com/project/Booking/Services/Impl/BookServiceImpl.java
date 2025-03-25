@@ -1,11 +1,11 @@
-package com.project.Booking.Services.serviceimples;
+package com.project.Booking.Services.Impl;
 
 import com.project.Booking.DTOs.BookDTO;
 import com.project.Booking.Entites.Book;
 import com.project.Booking.Exceptions.BookNotFoundException;
-import com.project.Booking.Mappers.MapperInterfaces.BookMapper;
+import com.project.Booking.Mappers.BookMapper;
 import com.project.Booking.Repositories.BookRepository;
-import com.project.Booking.Services.serviceinterfaces.BookService;
+import com.project.Booking.Services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
