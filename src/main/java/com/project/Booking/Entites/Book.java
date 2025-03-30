@@ -19,11 +19,11 @@ public class Book {
     @NotBlank( message = "Title is mandatory")
     private String title;
 
-    @NotBlank( message = "Author is mandatory")
-    private String author;
-
     @NotNull(message = "Published date is mandatory")
     private LocalDate publishedDate;
+
+    @ManyToOne
+    private Author author;
 
 
 }

@@ -1,11 +1,9 @@
 package com.project.Booking.Repositories;
 
-import com.project.Booking.Entites.Book;
+import com.project.Booking.Entites.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
-public interface BookRepository extends JpaRepository<Book, Long> {
+public interface AuthorRepository extends JpaRepository<Author, Long> {
 }

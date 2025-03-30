@@ -1,11 +1,13 @@
 package com.project.Booking.Mappers.Impl;
-
 import com.project.Booking.DTOs.BookDTO;
+import com.project.Booking.Entites.Author;
 import com.project.Booking.Entites.Book;
 import com.project.Booking.Mappers.BookMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class BookMapperImpl implements BookMapper {
 
     @Override
@@ -13,26 +15,21 @@ public class BookMapperImpl implements BookMapper {
         if(book == null){
             return null;
         }
-
         BookDTO bookDTO = new BookDTO();
-        bookDTO.setId(book.getId());
         bookDTO.setTitle(book.getTitle());
-        bookDTO.setAuthor(book.getAuthor());
         bookDTO.setPublishedDate(book.getPublishedDate());
         return bookDTO;
     }
 
     @Override
-    public Book toEntity(BookDTO bookDTO) {
+    public Book toEntity(BookDTO bookDTO, Author author) {
         if(bookDTO == null){
             return null;
         }
-
         Book book = new Book();
-        book.setId(bookDTO.getId());
         book.setTitle(bookDTO.getTitle());
-        book.setAuthor(bookDTO.getAuthor());
         book.setPublishedDate(bookDTO.getPublishedDate());
+        book.setAuthor(author);
         return book;
     }
 }
