@@ -60,5 +60,6 @@ public class AuthorServiceImpl implements AuthorService {
        if(!authorRepository.existsById(id)){
            throw new ResourceNotFoundException("Author not fond with id: " + id);
        }
+       authorRepository.deleteById(id);
     }
 }
